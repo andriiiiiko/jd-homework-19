@@ -1,0 +1,10 @@
+# Database Configuration
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/goit
+    username: admin
+    password: password
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: create-drop
