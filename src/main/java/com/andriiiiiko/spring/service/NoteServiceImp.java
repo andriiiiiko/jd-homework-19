@@ -4,13 +4,14 @@ import com.andriiiiiko.spring.entity.Note;
 import com.andriiiiiko.spring.exception.NoteNotFoundException;
 import com.andriiiiiko.spring.repository.NoteRepository;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 @Slf4j
 public class NoteServiceImp implements NoteService {
 
