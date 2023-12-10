@@ -1,11 +1,13 @@
 package com.andriiiiiko.spring.entity;
 
 import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Data;
 
 @Entity
-@Table
 @Data
+@Builder
+@Table("note")
 public class Note {
 
     @Id
@@ -18,3 +20,4 @@ public class Note {
     @Column(name = "content")
     private String content;
 }
+
