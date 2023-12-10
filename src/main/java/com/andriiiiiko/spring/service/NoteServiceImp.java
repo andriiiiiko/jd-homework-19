@@ -3,7 +3,6 @@ package com.andriiiiiko.spring.service;
 import com.andriiiiiko.spring.entity.Note;
 import com.andriiiiiko.spring.exception.NoteNotFoundException;
 import com.andriiiiiko.spring.repository.NoteRepository;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -37,11 +36,11 @@ public class NoteServiceImp implements NoteService {
 
     @Override
     public void update(Note note) {
-        log.info("Updating note with ID: {}", note.getId());
+        log.info("Updating note with ID: {}", note.getUserId());
 
         Note existingNote = noteRepository
-                .findById(note.getId())
-                .orElseThrow(() -> new NoteNotFoundException(note.getId()));
+                .findById(note.getUserId())
+                .orElseThrow(() -> new NoteNotFoundException(note.getUserId()));
 
         existingNote.setTitle(note.getTitle());
         existingNote.setContent(note.getContent());

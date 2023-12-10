@@ -7,7 +7,7 @@ import lombok.Data;
 @Entity
 @Data
 @Builder
-@Table("notes")
+@Table("note")
 public class Note {
 
     @Id
