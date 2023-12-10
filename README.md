@@ -7,7 +7,7 @@ The goal of this homework is to create a simple REST API for handling notes with
 The API should have the capability to perform the following actions:
 
 - **Create a Note**
-    - **Method:** CREATE
+    - **Method:** POST
     - **Endpoint:** `/api/notes`
     - **Description:** Create a new note.
 
@@ -17,7 +17,7 @@ The API should have the capability to perform the following actions:
     - **Description:** Retrieve a specific note by ID.
 
 - **Update a Note**
-    - **Method:** POST
+    - **Method:** PUT
     - **Endpoint:** `/api/notes/{id}`
     - **Description:** Update an existing note.
 
