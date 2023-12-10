@@ -7,16 +7,17 @@ import lombok.Data;
 @Entity
 @Data
 @Builder
-@Table("note")
+@Table("notes")
 public class Note {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @Column("user_id")
+    private Long userId;
 
-    @Column(name = "title")
+    @Column(name = "title", nullable = false)
     private String title;
 
-    @Column(name = "content")
+    @Column(name = "content", nullable = false)
     private String content;
 }
