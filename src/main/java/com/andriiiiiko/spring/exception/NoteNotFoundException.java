@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 public class NoteNotFoundException extends RuntimeException {
 
     public NoteNotFoundException(Long id) {
-        super(String.format("Note not found with ID: " + id));
+        super(String.format("Note not found with ID: %s", id));
     }
 }
