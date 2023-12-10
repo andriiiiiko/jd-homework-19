@@ -20,4 +20,3 @@ public class Note {
     @Column(name = "content")
     private String content;
 }
-
