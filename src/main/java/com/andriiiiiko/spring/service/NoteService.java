@@ -2,17 +2,13 @@ package com.andriiiiiko.spring.service;
 
 import com.andriiiiiko.spring.entity.Note;
 
-import java.util.List;
-
 public interface NoteService {
 
-    List<Note> listAll();
+    Note createNote(Note note);
 
-    Note add(Note note);
+    Note getNoteById(Long noteId);
 
-    void deleteById(Long id);
+    Note updateNote(Long noteId, Note note);
 
-    void update(Note note);
-
-    Note getById(Long id);
+    void deleteNoteById(Long noteId);
 }

@@ -1,19 +1,23 @@
 package com.andriiiiiko.spring.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Data
 @Builder
-@Table("note")
+@Table(name = "notes")
+@NoArgsConstructor
+@AllArgsConstructor
 public class Note {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column("user_id")
-    private Long userId;
+    @Column(name = "id")
+    private Long id;
 
     @Column(name = "title", nullable = false)
     private String title;
