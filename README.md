@@ -54,9 +54,8 @@ at least one migration using the Flyway database migration framework.
 
 ## Technologies Used
 
-- [Spring Boot](https://spring.io/projects/spring-boot)
-- [Spring Data](https://spring.io/projects/spring-data)
-- [Spring MVC](https://docs.spring.io/spring-framework/docs/current/reference/html/web.html)
+- [Spring Boot](https://spring.io/projects/spring-boot/)
+- [Spring Data](https://spring.io/projects/spring-data/)
 - [Flyway](https://flywaydb.org/)
 
 ## How to Run
