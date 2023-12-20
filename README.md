@@ -47,7 +47,6 @@ at least one migration using the Flyway database migration framework.
 ## General Requirements
 
 - Utilize Spring Boot framework
-- Use Spring Data and Spring MVC modules
 - Employ a relational database
 - Include at least one migration using the Flyway database migration framework
 - Implement validation for request fields during the creation and updating of a note
